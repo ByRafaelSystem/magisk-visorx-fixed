@@ -1,24 +1,20 @@
 <div align="center">
-  
-![Image Alt](https://github.com/ByRafaelSystem/magisk-visorx-fixed/blob/main/IMG_20260316_093832.jpg?raw=true)
 
-# 🎨 VisorX
+# Visor X
+### by Rafael System
 
-### By_Rafael System
+**Color & Graphics Engine — Motor de color para tu pantalla**
 
-**Color & Graphics Engine — Motor de color y gráficos para Android**
-
-[![Version](https://img.shields.io/badge/Version-v9.0-purple?style=flat-square)]()
+[![Version](https://img.shields.io/badge/Version-v10.0-cyan?style=flat-square)](https://github.com/ByRafaelSystem/magisk-visorx-fixed)
 [![Android](https://img.shields.io/badge/Android-8%2B-green?style=flat-square)]()
 [![Root](https://img.shields.io/badge/Root-Magisk%20%7C%20KSU%20%7C%20APatch-blue?style=flat-square)]()
-[![License](https://img.shields.io/badge/License-Apache%202.0-orange?style=flat-square)]()
-[![Author](https://img.shields.io/badge/Author-By__Rafael_System-red?style=flat-square)]()
+[![Author](https://img.shields.io/badge/Author-Rafael_System-orange?style=flat-square)]()
 
 </div>
 
 ---
 
-## 🌍 Idiomas / Languages
+## 🌍 Languages / Idiomas
 - 🇪🇸 [Español](#español)
 - 🇺🇸 [English](#english)
 - 🇧🇷 [Português](#português)
@@ -29,256 +25,165 @@
 
 ## 🇪🇸 Español
 
-### ¿Qué es VisorX?
+### ¿Qué es Visor X?
+Motor de color y gráficos que mejora la saturación, contraste y brillo de tu pantalla en tiempo real. 6 perfiles predefinidos + modo personalizado completo con sliders. WebUI integrada compatible con Magisk, KernelSU y APatch.
 
-VisorX es un módulo Magisk/KSU/APatch que mejora los colores de tu pantalla en tiempo real usando SurfaceFlinger. Trae 6 perfiles listos para usar y un modo completamente personalizable. El perfil se aplica automáticamente en cada reinicio.
-
-### 🎨 Perfiles disponibles
-
-| Perfil | Saturación | Contraste | Brillo | Ideal para |
-|---|---|---|---|---|
-| 🟣 Ultra Suave | 1.05 | 1.02 | 0.98 | Uso diario suave |
-| 🔵 Suave | 1.15 | 1.05 | 0.95 | Colores ligeramente mejorados |
-| 🟡 Medio | 1.45 | 1.12 | 1.0 | Balance visual óptimo |
-| 🔴 Fuerte | 1.8 | 1.2 | 1.0 | Colores vívidos e intensos |
-| ⚙️ Custom | Libre | Libre | Libre | Control total desde WebUI |
-| ⚪ Sistema | 1.0 | 1.0 | 1.0 | Restaura valores de fábrica |
-
-### ✨ Características técnicas
-
-- Aplica via `SurfaceFlinger` nativo — sin apps extra
-- Props `persist.sys.sf` + `persist.vendor.display.miui` para máxima compatibilidad con HyperOS/MIUI
-- Sharpness engine: ajuste de nitidez via `fb0/sharpness` y `persist.sys.sf.sharpness`
-- HDR mode activado en pantallas compatibles
-- Renderer backend `skiaglthreaded` para mayor fluidez visual
-- Log automático en `Descargas/visual_rafael.log` con valores exactos aplicados
-- Escucha cambios en tiempo real: al cambiar perfil en WebUI se aplica sin reiniciar
+### ✨ Características
+- 🩵 **Ultra Suave**: Saturación 1.05 · Contraste 1.02 — ajuste casi imperceptible
+- 🟢 **Suave**: Saturación 1.15 · Contraste 1.05 — colores ligeramente mejorados
+- 🟡 **Medio**: Saturación 1.45 · Contraste 1.12 — balance visual óptimo
+- 🔴 **Fuerte**: Saturación 1.80 · Contraste 1.20 — colores vívidos e intensos
+- 🎛️ **Custom**: Control total de saturación (0.5×→2.5×), contraste y brillo real
+- 🔵 **Sistema**: Restaura los valores originales de fábrica
+- 🖼️ **Banner personalizable**: Elige tu propia imagen de fondo — se guarda de forma permanente
+- 📋 **Log automático**: Se genera `VisorX.log` en `Download/` con cada cambio de perfil
+- 🌐 **WebUI multiidioma**: Español, English, Português, Indonesia, Русский
 
 ### 📱 Compatibilidad
-
 | Dispositivo | Compatibilidad | Notas |
 |---|---|---|
-| Xiaomi / Redmi / POCO | ✅ Máxima | Props MIUI/HyperOS completos activos |
-| Samsung | ✅ Buena | SurfaceFlinger universal |
-| OnePlus / OPPO | ✅ Buena | SurfaceFlinger universal |
-| Motorola / Nokia | ✅ Buena | SurfaceFlinger universal |
-| Cualquier Android 8+ | ✅ Base | Funciona en cualquier ROM |
+| Xiaomi / Redmi / POCO | ✅ **Máxima** | Todos los props MIUI/HyperOS activos |
+| Samsung | ✅ Buena | Saturación y contraste base |
+| OnePlus / OPPO | ✅ Buena | Saturación y contraste base |
+| Motorola / Nokia | ✅ Buena | Saturación y contraste base |
+| Cualquier Android 8+ | ✅ Base | SurfaceFlinger universal funciona |
 
-### ⚙️ Gestores de root compatibles
+### ⚙️ Gestores de Root
+| Gestor | Estado |
+|---|---|
+| Magisk v20.4+ | ✅ Soportado |
+| KernelSU | ✅ Soportado |
+| APatch | ✅ Soportado |
 
-| Gestor | Versión mínima | Estado |
-|---|---|---|
-| Magisk | v20.4+ | ✅ Soportado |
-| KernelSU | Cualquiera | ✅ Soportado |
-| APatch | Cualquiera | ✅ Soportado |
+### 🚀 Instalación
+1. Descarga el `.zip` desde [Releases](https://github.com/ByRafaelSystem/magisk-visorx-fixed/releases)
+2. Abre Magisk / KSU / APatch → **Módulos** → **Instalar desde almacenamiento**
+3. Selecciona el `.zip` y reinicia
+4. Abre la WebUI desde el gestor de root para elegir tu perfil
 
-### 📲 Instalación
-
-1. Descargá el ZIP desde la página oficial
-2. Abrí Magisk / KSU / APatch
-3. Instalá desde ZIP
-4. Reiniciá el dispositivo
-5. Abrí **KSU WebUI** → elegí tu perfil
-
-> El panel de control se administra desde **KSU WebUI**. Desde ahí podés cambiar perfiles, ajustar valores custom y ver el estado del módulo en tiempo real.
-
-### ❓ Preguntas frecuentes
-
-**¿Necesito reiniciar para cambiar de perfil?**
-No. Al cambiar el perfil desde la WebUI se aplica en segundos sin reiniciar.
-
-**¿Afecta la batería?**
-Mínimamente. Los cambios son a nivel de propiedades del sistema, no corren procesos pesados.
-
-**¿Cómo vuelvo a los colores de fábrica?**
-Desde la WebUI elegí el perfil **Sistema** o simplemente desinstalá el módulo.
-
-**¿Funciona con otros módulos de rendimiento?**
-Sí, es compatible con Project Diablo y ARG X9 del mismo autor.
-
-**¿Dónde veo los valores aplicados?**
-Se guarda un log en `Descargas/visual_rafael.log` con saturación, contraste y brillo exactos.
+### 📝 Notas
+- Si tenías la versión anterior instalada (id `visual_by_rafael`), desinstálala primero y reinicia antes de instalar v10.0
+- El log se guarda automáticamente en `Download/VisorX.log` cada vez que se aplica un perfil
+- El banner personalizado se mantiene hasta que el usuario lo cambie manualmente
 
 ---
 
 ## 🇺🇸 English
 
-### What is VisorX?
+### What is Visor X?
+Color and graphics engine that improves saturation, contrast and brightness of your screen in real time. 6 predefined profiles + full custom mode with sliders. Built-in WebUI compatible with Magisk, KernelSU and APatch.
 
-VisorX is a Magisk/KSU/APatch module that enhances your screen colors in real time using SurfaceFlinger. It comes with 6 ready-to-use profiles and a fully customizable mode. The profile is automatically applied on every reboot.
-
-### 🎨 Available profiles
-
-| Profile | Saturation | Contrast | Brightness | Best for |
-|---|---|---|---|---|
-| 🟣 Ultra Soft | 1.05 | 1.02 | 0.98 | Gentle daily use |
-| 🔵 Soft | 1.15 | 1.05 | 0.95 | Slightly enhanced colors |
-| 🟡 Medium | 1.45 | 1.12 | 1.0 | Optimal visual balance |
-| 🔴 Strong | 1.8 | 1.2 | 1.0 | Vivid and intense colors |
-| ⚙️ Custom | Free | Free | Free | Full control from WebUI |
-| ⚪ System | 1.0 | 1.0 | 1.0 | Restores factory values |
-
-### ✨ Technical features
-
-- Applied via native `SurfaceFlinger` — no extra apps needed
-- `persist.sys.sf` + `persist.vendor.display.miui` props for maximum HyperOS/MIUI compatibility
-- Sharpness engine via `fb0/sharpness` and `persist.sys.sf.sharpness`
-- HDR mode enabled on compatible displays
-- `skiaglthreaded` render backend for smoother visuals
-- Auto log at `Downloads/visual_rafael.log` with exact applied values
-- Real-time profile switching — no reboot needed when changing profiles from WebUI
+### ✨ Features
+- 🩵 **Ultra Soft**: Saturation 1.05 · Contrast 1.02 — almost imperceptible adjustment
+- 🟢 **Soft**: Saturation 1.15 · Contrast 1.05 — slightly enhanced colors
+- 🟡 **Medium**: Saturation 1.45 · Contrast 1.12 — optimal visual balance
+- 🔴 **Strong**: Saturation 1.80 · Contrast 1.20 — vivid and intense colors
+- 🎛️ **Custom**: Full control of saturation (0.5×→2.5×), contrast and real brightness
+- 🔵 **System**: Restores original factory values
+- 🖼️ **Custom banner**: Choose your own background image — saved permanently
+- 📋 **Auto log**: `VisorX.log` is generated in `Download/` with every profile change
+- 🌐 **Multilanguage WebUI**: Spanish, English, Portuguese, Indonesian, Russian
 
 ### 📱 Compatibility
-
 | Device | Compatibility | Notes |
 |---|---|---|
-| Xiaomi / Redmi / POCO | ✅ Maximum | Full MIUI/HyperOS props |
-| Samsung | ✅ Good | Universal SurfaceFlinger |
-| OnePlus / OPPO | ✅ Good | Universal SurfaceFlinger |
-| Any Android 8+ | ✅ Base | Works on any ROM |
+| Xiaomi / Redmi / POCO | ✅ **Maximum** | All MIUI/HyperOS props active |
+| Samsung | ✅ Good | Base saturation and contrast |
+| OnePlus / OPPO | ✅ Good | Base saturation and contrast |
+| Motorola / Nokia | ✅ Good | Base saturation and contrast |
+| Any Android 8+ | ✅ Base | Universal SurfaceFlinger works |
 
-### ⚙️ Supported root managers
+### ⚙️ Root Managers
+| Manager | Status |
+|---|---|
+| Magisk v20.4+ | ✅ Supported |
+| KernelSU | ✅ Supported |
+| APatch | ✅ Supported |
 
-| Manager | Min version | Status |
-|---|---|---|
-| Magisk | v20.4+ | ✅ Supported |
-| KernelSU | Any | ✅ Supported |
-| APatch | Any | ✅ Supported |
+### 🚀 Installation
+1. Download the `.zip` from [Releases](https://github.com/ByRafaelSystem/magisk-visorx-fixed/releases)
+2. Open Magisk / KSU / APatch → **Modules** → **Install from storage**
+3. Select the `.zip` and reboot
+4. Open the WebUI from your root manager to select a profile
 
-### 📲 Installation
-
-1. Download the ZIP from the official page
-2. Open Magisk / KSU / APatch
-3. Install from ZIP
-4. Reboot your device
-5. Open **KSU WebUI** → choose your profile
-
-> The control panel is managed from **KSU WebUI**. From there you can switch profiles, adjust custom values and see the module status in real time.
-
-### ❓ FAQ
-
-**Do I need to reboot to change profiles?**
-No. Changing the profile from WebUI applies in seconds without rebooting.
-
-**Does it affect battery life?**
-Minimally. Changes are at system property level, no heavy processes running.
-
-**How do I go back to factory colors?**
-From WebUI choose the **System** profile, or simply uninstall the module.
-
-**Is it compatible with other modules?**
-Yes, compatible with Project Diablo and ARG X9 from the same author.
-
-**Where can I see the applied values?**
-A log is saved at `Downloads/visual_rafael.log` with exact saturation, contrast and brightness values.
+### 📝 Notes
+- If you had the previous version installed (id `visual_by_rafael`), uninstall it first and reboot before installing v10.0
+- Log is saved automatically to `Download/VisorX.log` on every profile apply
+- Custom banner persists until the user changes it manually
 
 ---
 
 ## 🇧🇷 Português
 
-### O que é VisorX?
+### O que é Visor X?
+Motor de cor e gráficos que melhora a saturação, contraste e brilho da sua tela em tempo real. 6 perfis predefinidos + modo personalizado completo com sliders. WebUI integrada compatível com Magisk, KernelSU e APatch.
 
-VisorX é um módulo Magisk/KSU/APatch que melhora as cores da sua tela em tempo real usando SurfaceFlinger. Traz 6 perfis prontos e um modo totalmente personalizável. O perfil é aplicado automaticamente a cada reinicialização.
-
-### 🎨 Perfis disponíveis
-
-| Perfil | Saturação | Contraste | Brilho |
-|---|---|---|---|
-| 🟣 Ultra Suave | 1.05 | 1.02 | 0.98 |
-| 🔵 Suave | 1.15 | 1.05 | 0.95 |
-| 🟡 Médio | 1.45 | 1.12 | 1.0 |
-| 🔴 Forte | 1.8 | 1.2 | 1.0 |
-| ⚙️ Custom | Livre | Livre | Livre |
-| ⚪ Sistema | 1.0 | 1.0 | 1.0 |
+### ✨ Funcionalidades
+- 🩵 **Ultra Suave**: Saturação 1.05 · Contraste 1.02
+- 🟢 **Suave**: Saturação 1.15 · Contraste 1.05
+- 🟡 **Médio**: Saturação 1.45 · Contraste 1.12 — equilíbrio visual ideal
+- 🔴 **Forte**: Saturação 1.80 · Contraste 1.20 — cores vívidas e intensas
+- 🎛️ **Custom**: Controle total de saturação, contraste e brilho
+- 🔵 **Sistema**: Restaura valores originais de fábrica
+- 🖼️ **Banner personalizado**: Escolha sua imagem de fundo — salva permanentemente
+- 📋 **Log automático**: `VisorX.log` gerado em `Download/` a cada mudança de perfil
 
 ### 📱 Compatibilidade
-
 | Dispositivo | Compatibilidade |
 |---|---|
 | Xiaomi / Redmi / POCO | ✅ Máxima |
 | Samsung / OnePlus | ✅ Boa |
 | Qualquer Android 8+ | ✅ Base |
 
-### 📲 Instalação
-
-1. Baixe o ZIP na página oficial
-2. Abra o Magisk / KSU / APatch
-3. Instale pelo ZIP
-4. Reinicie
-5. Abra o **KSU WebUI** → escolha o perfil
-
 ---
 
 ## 🇮🇩 Indonesia
 
-### Apa itu VisorX?
+### Apa itu Visor X?
+Mesin warna dan grafis yang meningkatkan saturasi, kontras, dan kecerahan layar Anda secara real time. 6 profil preset + mode kustom lengkap dengan slider. WebUI bawaan kompatibel dengan Magisk, KernelSU dan APatch.
 
-VisorX adalah modul Magisk/KSU/APatch yang meningkatkan warna layar secara real time menggunakan SurfaceFlinger. Dilengkapi 6 profil siap pakai dan mode yang dapat dikustomisasi sepenuhnya.
-
-### 🎨 Profil tersedia
-
-| Profil | Saturasi | Kontras | Kecerahan |
-|---|---|---|---|
-| 🟣 Ultra Lembut | 1.05 | 1.02 | 0.98 |
-| 🔵 Lembut | 1.15 | 1.05 | 0.95 |
-| 🟡 Sedang | 1.45 | 1.12 | 1.0 |
-| 🔴 Kuat | 1.8 | 1.2 | 1.0 |
-| ⚙️ Custom | Bebas | Bebas | Bebas |
-| ⚪ Sistem | 1.0 | 1.0 | 1.0 |
+### ✨ Fitur
+- 🩵 **Ultra Lembut**: Saturasi 1.05 · Kontras 1.02
+- 🟢 **Lembut**: Saturasi 1.15 · Kontras 1.05
+- 🟡 **Sedang**: Saturasi 1.45 · Kontras 1.12 — keseimbangan visual optimal
+- 🔴 **Kuat**: Saturasi 1.80 · Kontras 1.20 — warna cerah dan intens
+- 🎛️ **Custom**: Kontrol penuh saturasi, kontras, dan kecerahan
+- 🔵 **Sistem**: Mengembalikan nilai bawaan pabrik
+- 🖼️ **Banner kustom**: Pilih gambar latar sendiri — tersimpan permanen
+- 📋 **Log otomatis**: `VisorX.log` disimpan di `Download/` setiap pergantian profil
 
 ### 📱 Kompatibilitas
-
 | Perangkat | Kompatibilitas |
 |---|---|
 | Xiaomi / Redmi / POCO | ✅ Maksimal |
 | Samsung / OnePlus | ✅ Baik |
 | Android 8+ manapun | ✅ Dasar |
 
-### 📲 Instalasi
-
-1. Unduh ZIP dari halaman resmi
-2. Buka Magisk / KSU / APatch
-3. Pasang dari ZIP
-4. Reboot
-5. Buka **KSU WebUI** → pilih profil
-
 ---
 
 ## 🇷🇺 Русский
 
-### Что такое VisorX?
+### Что такое Visor X?
+Движок цвета и графики, который улучшает насыщенность, контрастность и яркость экрана в реальном времени. 6 предустановленных профилей + полный пользовательский режим со слайдерами. Встроенный WebUI совместим с Magisk, KernelSU и APatch.
 
-VisorX — модуль Magisk/KSU/APatch, улучшающий цвета экрана в реальном времени через SurfaceFlinger. Включает 6 готовых профилей и полностью настраиваемый режим.
-
-### 🎨 Доступные профили
-
-| Профиль | Насыщенность | Контраст | Яркость |
-|---|---|---|---|
-| 🟣 Ультра мягкий | 1.05 | 1.02 | 0.98 |
-| 🔵 Мягкий | 1.15 | 1.05 | 0.95 |
-| 🟡 Средний | 1.45 | 1.12 | 1.0 |
-| 🔴 Сильный | 1.8 | 1.2 | 1.0 |
-| ⚙️ Custom | Свободно | Свободно | Свободно |
-| ⚪ Система | 1.0 | 1.0 | 1.0 |
+### ✨ Возможности
+- 🩵 **Ультра мягкий**: Насыщенность 1.05 · Контраст 1.02
+- 🟢 **Мягкий**: Насыщенность 1.15 · Контраст 1.05
+- 🟡 **Средний**: Насыщенность 1.45 · Контраст 1.12 — оптимальный визуальный баланс
+- 🔴 **Сильный**: Насыщенность 1.80 · Контраст 1.20 — яркие и насыщенные цвета
+- 🎛️ **Custom**: Полный контроль насыщенности, контраста и яркости
+- 🔵 **Система**: Восстанавливает заводские значения
+- 🖼️ **Кастомный баннер**: Выберите своё фоновое изображение — сохраняется навсегда
+- 📋 **Авто лог**: `VisorX.log` сохраняется в `Download/` при каждой смене профиля
 
 ### 📱 Совместимость
-
 | Устройство | Совместимость |
 |---|---|
 | Xiaomi / Redmi / POCO | ✅ Максимальная |
 | Samsung / OnePlus | ✅ Хорошая |
 | Android 8+ любой | ✅ Базовая |
 
-### 📲 Установка
-
-1. Скачайте ZIP с официальной страницы
-2. Откройте Magisk / KSU / APatch
-3. Установите из ZIP
-4. Перезагрузите устройство
-5. Откройте **KSU WebUI** → выберите профиль
-
 ---
 
-## 📄 Licencia / License
-
-Apache License 2.0 — By_Rafael System © 2026
+## 📄 License
+Apache License 2.0 — Rafael System © 2026
