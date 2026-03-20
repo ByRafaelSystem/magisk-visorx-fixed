@@ -1,4 +1,6 @@
-<div align="center">
+<div align="center"> 
+
+![VisorX Banner](https://github.com/ByRafaelSystem/magisk-visorx-fixed/blob/main/IMG_20260320_113000.jpg?raw=true)
 
 # Visor X
 ### by Rafael System
